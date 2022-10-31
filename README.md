@@ -13,7 +13,7 @@ __NOTE__:
 * Please consider your git history as this will be reviewed
 * Keep in mind that the assessment should build & run the relevant tests without issue upon assessment
 * Commit & push code regularly
-* Once complete, please send a link to your repository to tim@geminisolution.co.za and CC: elrika@geminisolution.co.za.
+* Once complete, please send a link to your repository to tim@geminisolution.co.za.
 
 # Algo Assessment
 This repository consists of 4 challenges, but you only need to choose 3 that you would like to complete.
