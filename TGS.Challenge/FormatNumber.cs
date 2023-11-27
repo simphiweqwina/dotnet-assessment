@@ -26,6 +26,26 @@ namespace TGS.Challenge
     {
         public string Format(int value)
         {
+            //check that value is vaild
+            if (value == null || value < 0 ) { throw new ArgumentNullException();  }
+
+            //check if has more than 3 characters
+            if (value.ToString().Length <= 3 ) { return value.ToString(); }
+            else
+            {
+                int numberOfCommas;
+                char[] newWordArray = value.ToString().ToCharArray();
+                numberOfCommas = newWordArray.Length / 3;
+
+                Array.Resize(ref newWordArray, newWordArray.Length + numberOfCommas);
+
+
+                
+            }
+
+            //format
+
+
             return string.Empty;
         }
     }
