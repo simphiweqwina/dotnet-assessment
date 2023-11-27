@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+
 namespace TGS.Challenge
 {
   /*
@@ -24,7 +27,25 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
-        return false;
+            // check actual values exist
+            if (word1 == null || word2 == null) { throw new ArgumentNullException(); }
+
+            //check if the words are not the same word
+            if (word1 == word2) { return false; }
+
+            //check if the words have the same length
+            if(word1.Length != word2.Length) { return false; }
+
+            // check if words are anagrams
+            char[] word1Array = word1.ToCharArray();
+            char[] word2Array = word2.ToCharArray();
+
+            for (int i = 0; i < word1Array.Length ; i++)
+            {
+                if (!word2Array.Contains(word1Array[i])) { return false; }
+            }
+
+            return true;
       }
     }
 }
